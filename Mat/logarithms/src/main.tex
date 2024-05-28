@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage{geometry}[margin=5pt]
+\usepackage{amsmath}
+\usepackage[slovak]{babel}
+\usepackage[T1]{fontenc}
+
+\title{Základné logaritmické pravidlá a ich dôkazy pre laikov}
+\author{Adam Labuš}
+
+\begin{document}
+\begin{titlepage}
+	\maketitle
+\end{titlepage}
+
+\large
+\section{Úvod - Definícia logartimu}
+Vytvorme hypotetickú funkciu log(), ktorá na vstup bere dve čísla ``a`` a ``x``. Hodnotu tejto funkcie nazveme ``y``. Súvis týchto troch premenných sa dá zapísať nasledovne: \\
+\begin{align}
+	a^y = x
+\end{align}
+Správanie našej funkcie vieme potom vyjadriť takto: \\
+\begin{align}
+	\log_a(x) = y
+\end{align}
+Dôvod prečo takúto funkciu potrebujeme je, lebo nam pomáha vyjadriť ``y`` z rovnice (1). Bohužiaľ inak ako pri umocňovaní, pravidlá logaritmov niesu na prvý pohľad také intuitívne, preto niektoré ``zjednodušenia`` alebo ``pravidlá`` treba podložiť dôkazom.
+
+
+\section*{Pravidlo I.}
+Z úvodu vyplýva: \\
+\begin{align}
+	\log_a(a^y) & = y \tag{dosadili sme si x}
+\end{align}
+
+
+\section*{Dôkaz pravidla II. - logaritmické pravidlo mocniny}
+Toto pravidlo vzniklo asi tým, že niekto sa snažil inak vyjadriť hodnotu nasledovného výrazu: \\
+\begin{align}
+	\log_a(a^{y_1^y_2}) = ?
+\end{align}
+Tak poďme na to!: \\
+\begin{align}
+	\log_a(a^{y_1^y_2}) & = \log_a(a^{y_1 * y_2}) \\
+	& = y_1 * y_2 \tag{použili sme I.}
+\end{align}
+V tomto pravidle ide o to, že pri jeho použití budeme poznať hodnotu ``$y_2$``. Hľadať budeme ``$y_1$``.
+Preto si vyjadríme ``$y_1$`` a ``$a^{y_1}$`` niečim iným: \\
+\begin{align}
+	y_1 & = \log_a(a^{y_1}) \\
+	a^{y_1} & = x \\
+	& = y_2 * \log_a(a^y_1) \\
+	& = y_2 * \log_a(x)
+\end{align}
+Aby sme dostali oficiálne znenie tohto pravidla, tak zmeníme názov písmenka ``$y_2$`` na ``n`` lebo stratilo svôj originálny význam fyzického výpočtu hodnoty funkcie. Celé znenie tohto pravidla potom je: \\
+\begin{align}
+	\log_a(x^n) = n * \log_a(x^n)
+\end{align}
+
+
+\section*{Dôkaz pravidla III. - logaritmické pravidlo produktu}
+Už budeme iba nadväzovať na predošlé výpočty. V tomto dôkaze veľmi čudesne použijeme pravidlo I. , nakoľko pomocu neho vieme akékoľvek číslo vyjadriť logaritmom. Toto robíme preto, aby sme spojili dva logaritmy do jedného.
+Toto pred dobou kalkulačiek, veľmi šetrilo čas, lebo hodnoty logaritmov sa počítali ručne.\\
+\begin{align}
+\log_a(x_1) + \log_a(x_2) & = ? \\
+	& = \log_a(a^{\log_a(x_1) + \log_a(x_2)}) \tag{spomenutá magická premena}\\
+	& = \log_a(a^{\log_a(x_1)} * a^{\log_a(x_2)})  \\
+	& = \log_a(x_1 * x_2) \tag{Znovu I.}
+\end{align}
+
+\section*{Dôkaz pravidla IV. - logaritmické pravidlo kvocientu}
+To isté ako predošlí dôkaz lenže s odčítavaním. \\
+\begin{align} 
+\log_a(x_1) - \log_a(x_2) & = ? \\
+	& = \log_a(a^{\log_a(x_1) - \log_a(x_2)})  \\
+	& = \log_a(a^{\log_a(x_1)}/a^{\log_a(x_2)}) \\
+	& = \log_a(x_1/x_2)
+\end{align}
+
+\section*{Dôkaz pravidla V. - logaritmické pravidlo zmeny základu logaritmu}
+Toto posledné pravidlo je super, keď máme kalkulačku iba s jedným základom logaritmu, inak povedané, kalkulačka nemá tlačítko logaritmu, kde sa dá meniť základ. Samotný dôkaz používa podobný trik ako ten predošlí, kde sme vyjadrili výraz logaritmom. Tentokrát vyjadríme ``$x_1$`` ako ``x_2^{log_{x_2}(x_1)}``\\
+
+\begin{align}
+\log_a(x_1) & = ? \\
+\log_a(x_1) & = \log_a(x_1) \\
+& = log_a(x_2^{log_{x_2}(x_1)}) \tag{spomenutá úprava}\\
+& = log_{x_2}(x_1) * log_a(x_2)\\
+\frac{\log_a(x_1)}{\log_a(x_2)} & = log_{x_2}(x_1) \\
+\log_{x_2}(x_1) & = \frac{\log_a(x_1)}{\log_a(x_2)} \tag{len otočíme strany}\\
+\log_a(x) & = \frac{log_b(x)}{log_b(a)} \tag{znovu zmeníme písmenka}
+\end{align}
+
+
+
+\section{Záver}
+Takže spolu v poradí sme potvrdili nasledovné:
+\begin{align}
+	& log_a(a^y) = y \\
+	& log_a(x^n) = n * log_a(x) \\
+	& log_a(x_1 * x_2) = log_a(x_1) + log_a(x_2) \\
+	& log_a(x_1/x_2) = log_a(x_1) - log_a(x_2) \\
+	& log_a(x) = \frac{\log_b(x)}{\log_b(a)}
+\end{align}
+Týmto som chcel dokázať, že dôkazy sa dajú robiť bez metúcich substitúcií, ktoré najčastejšie sú použité na internete.
+Predpokladám, že tomu tak je kvôli tomu, lebo napr. zobraziť na stránke mocninu mocniny, čo sa bežne stáva, keď nenahrádzate všetko za premenné, je ťažké.
+Takisto som toho názoru, že každý dôkaz by mal začať odzadu, keď jeho účeľom je, aby niekto pochopil, čo je vlastne výpovedná hodnota pravidla, ktoré potvrdzuje.
+Ako dobrý čarodejník, by sme mali začať so situáciou alebo vyjadrením s ktorým všetci súhlasia a až potom sa dopracovať ku nejakému vzorcu alebo pravidlu.
+Keď to robíme takto, tak sa ľahšie vidí do hlavy autora týchto pravidiel. Úloha dokazovateľa je sa snažiť sa v ``magický operáciach`` rozmýšlanie autora znovu nájsť a predstaviť žiakovi.
+Pri matematike treba mať stále na pamäti, že na konci dňa, keď zaplníme stranu výpočtami, tak na papiery nie je nič iné ako písmenka. Úloha vysvetlujúceho je priradiť ku ním význam a obhájiť ich existenciu, čím sa ku ním priradí myšlienka v našej hlave. Tento moment označujeme vetou: "Tomu chápem" (alebo Daniel C. hovorí: "Pozrem, vidím").
+\end{document}

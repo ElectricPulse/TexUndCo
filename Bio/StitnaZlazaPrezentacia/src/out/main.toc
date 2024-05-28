@@ -1,0 +1,7 @@
+\babel@toc {slovak}{}\relax 
+\beamer@sectionintoc {1}{ Biogénny význam jódu a vývin štítnej žľazy }{3}{0}{1}
+\beamer@sectionintoc {2}{Vonkajší opis}{6}{0}{2}
+\beamer@sectionintoc {3}{Vnútorný opis a hormóny štítnej žľazy}{11}{0}{3}
+\beamer@sectionintoc {4}{Funkcia}{16}{0}{4}
+\beamer@sectionintoc {5}{Poruchy}{20}{0}{5}
+\beamer@sectionintoc {6}{Záver}{29}{0}{6}

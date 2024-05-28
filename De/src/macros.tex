@@ -1,0 +1,39 @@
+\AtBeginSection[]{%
+	\begin{frame}	
+	\centering
+	\uacht\Huge\insertsection
+	\end{frame}
+}
+
+\svgpath{images/}
+\def\svg#1#2{\includesvg[width=#1]{#2}}
+
+\def\ensureCounterExists#1{%
+	\ifcsname c@#1\endcsname
+	\else
+		\newcounter{#1}\relax
+	\fi
+}
+
+\def\ifSign#1#2#3{%
+	\begingroup
+	\pgfmathsetmacro{\var}{#1}
+	\pgfmathparse{ifthenelse(\var>=0,1,0)}
+	\ifdim\pgfmathresult pt= 1 pt
+		#2
+	\else
+		#3
+	\fi
+	\endgroup
+}
+
+\newenvironment{frameplain}{
+	\begingroup
+	\advance\textwidth-1.5cm
+	\hsize\textwidth
+	\columnwidth\textwidth
+	\begin{frame}[plain]
+}{
+	\end{frame}
+	\endgroup
+}

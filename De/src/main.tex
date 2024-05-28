@@ -1,0 +1,29 @@
+%The usenames,dvipsnames is for xcolor working with tikz
+\documentclass[usenames,dvipsnames]{beamer}
+%\setbeameroption{show only notes}
+\setbeamersize{text margin left=2pt, text margin right=2pt}
+\usetheme{Hannover}
+\input ./packages.tex
+\input ./fonts.tex
+\input ./macros.tex
+
+\title{\uacht Der böse Geschäft der Eisenbahn in der Bundesrepublik Deutschland}
+\author{Ph.D Matouš Rippl, Ing. Jozef Labuš}
+\institute{Johann Gottfried Herder Gymnasium Berlin}
+\date{2023}
+
+\begin{document}
+
+\begin{frameplain}
+	\pause
+	\titlepage
+	\note{
+	Es wird ein offener Presentation heuete, wenn ihr fragen habt fragt sie jetzt, nicht am ende
+}
+\end{frameplain}
+\input ./slides/intro.tex
+\input ./slides/geschichte.tex
+\input ./slides/gegenwart.tex
+\input ./slides/zukunft.tex
+\input ./slides/outro.tex
+\end{document}

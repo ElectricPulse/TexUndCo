@@ -1,0 +1,10 @@
+\def \HackermanFontDeclare #1%
+	{\pdfmapline{+#1 < fonts/#1/main.pfb < fonts/#1/main.enc}
+	\DeclareFontFamily{T1}{#1}{}
+	\DeclareFontShape{T1}{#1}{m}{n}{<-> fonts/#1/#1.tfm}{}
+	\expandafter\def\csname #1\endcsname{\usefont{T1}{#1}{m}{n}}
+}
+
+\HackermanFontDeclare{uacht}
+\HackermanFontDeclare{gillsans}
+\HackermanFontDeclare{offenbacher}

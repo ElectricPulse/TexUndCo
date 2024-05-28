@@ -1,0 +1,13 @@
+--2024-01-04 22:23:22--  https://ipravda.sk/res/2015/06/03/thumbs/trnavske-myto-clanokW.jpg
+Resolving ipravda.sk (ipravda.sk)... 217.67.31.49
+Connecting to ipravda.sk (ipravda.sk)|217.67.31.49|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 128241 (125K) [image/jpeg]
+Saving to: ‘trnavske-myto-clanokW.jpg’
+
+     0K .......... .......... .......... .......... .......... 39% 2.86M 0s
+    50K .......... .......... .......... .......... .......... 79% 2.17M 0s
+   100K .......... .......... .....                           100% 5.31M=0.04s
+
+2024-01-04 22:23:22 (2.77 MB/s) - ‘trnavske-myto-clanokW.jpg’ saved [128241/128241]
+

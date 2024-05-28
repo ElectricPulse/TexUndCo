@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage{geometry}[margin=5pt]
+\usepackage{amsmath}
+\usepackage[slovak]{babel}
+\usepackage[T1]{fontenc}
+
+\title{Základné logaritmické pravidlá a ich dôkazy pre laikov}
+\author{Adam Labuš}
+
+\begin{document}
+\begin{titlepage}
+	\maketitle
+\end{titlepage}
+
+\large
+\section{Úvod - Definícia logartimu}
+Vytvorme hypotetickú funkciu log(), ktorá na vstup bere dve čísla ``a`` a ``x``. Hodnotu tejto funkcie nazveme ``y``. Súvis týchto troch premenných sa dá zapísať nasledovne: \\
+\begin{align}
+	a^y = x
+\end{align}
+Správanie našej funkcie vieme potom vyjadriť takto: \\
+\begin{align}
+	\log_a(x) = y
+\end{align}
+Dôvod prečo takúto funkciu potrebujeme je, lebo nam pomáha vyjadriť ``y`` z rovnice (1). Bohužiaľ inak ako pri umocňovaní, pravidlá logaritmov niesu na prvý pohľad také intuitívne, preto niektoré ``zjednodušenia`` alebo ``pravidlá`` treba podložiť dôkazom.
+
+
+\section*{Pravidlo I.}
+Z úvodu vyplýva: \\
+\begin{align}
+	\log_a(a^y) & = y \tag{dosadili sme si x}
+\end{align}
+
+
+\section*{Dôkaz pravidla II. - logaritmické pravidlo mocniny}
+Toto pravidlo vzniklo asi tým, že niekto sa snažil inak vyjadriť hodnotu nasledovného výrazu: \\
+\begin{align}
+	\log_a((a^{y_1^y_2}) = ?
+\end{align}
+Tak poďme na to!: \\
+\begin{align}
+	\log_a((a^{y_1^y_2}) & = \log_a(a^{y_1 * y_2}) \\
+	& = y_1 * y_2 \tag{použili sme I.}
+\end{align}
+V tomto pravidle ide o to, že pri jeho použití budeme poznať hodnotu ``$y_2$". Hľadať budeme "$y_1$". Preto si vyjadrime "$y_1$" a "$a^y_1$" niečim iným: \\
+\begin{align}
+	y_1 & = \log_a(a^{y_1}) \\
+	a^{y_1} & = x \\
+	\log_a(x^{y_2}) & = y_2 * \log_a(a^y_1) \\
+	\log_a(x^{y_2}) & = y_2 * \log_a(x)
+\end{align}
+Aby sme dostali oficiálne znenie tohto pravidla, tak zmeníme názov písmenka ``$y_2$`` na ``n`` lebo stratilo svôj originálny význam: \\
+\begin{align}
+	\log_a(x^n) = n * \log_a(x^n)
+\end{align}
+
+
+\section*{Dôkaz pravidla III. - logaritmické pravidlo produktu}
+Už budeme iba odvodzovať z predošlých pravidiel. V tomto dôkaze veľmi čudesne použijeme pravidlo 1. na to aby sme spojili dva logaritmy do jedného.\\
+\begin{align}
+\log_a(x_1) + \log_a(x_2) & = ? \\
+	& = \log_a(a^{\log_a(x_1) + \log_a(x_2)})  \\
+	& = \log_a(a^{\log_a(x_1) * a^(\log_a(x_2)}) \\
+	& = \log_a(x_1 * x_2)
+\end{align}
+
+\section*{Dôkaz pravidla IV. - logaritmické pravidlo kvocientu}
+To isté ako predošlí dôkaz lenže s odčítavaním.:
+\begin{align} 
+\log_a(x_1) - \log_a(x_2) & = ? \\
+	& = \log_a(a^{\log_a(x_1) - \log_a(x_2)})  \\
+	& = \log_a(a^{\log_a(x_1) - a^(\log_a(x_2)}) \\
+	& = \log_a(x_1/x_2)
+\end{align}
+
+\section*{Dôkaz pravidla V. - logaritmické pravidlo zmeny základu logaritmu}
+V tomto poslednom dôkaze použijeme. \\
+\begin{align}
+\log_a(x_1) & = ? \\
+\log_a(x_1) & = log_a(x_2^{log_{x_2}(x_1)}) \\
+\log_a(x_1) & = log_{x_2}(x_1) * log_a(x_2) \\
+\frac{\log_a(x_1)}{\log_a(x_2)} & = log_{x_2}(x_1) \\
+\log_{x_2}(x_1) & = \frac{\log_a(x_1)}{\log_a(x_2)}
+\end{align}
+Toto pravidlo je super, keď máme kalkulačku iba s jedným logaritmom ie. nedá sa meniť jeho základ.
+
+
+\section{Záver}
+Takže spolu v poradí sme potvrdili nasledovné:
+\begin{align}
+	& log_a(a^y) = y \\
+	& log_a(x^n) = n * log_a(x) \\
+	& log_a(x_1 * x_2) = log_a(x_1) + log_a(x_2) \\
+	& log_a(x_1/x_2) = log_a(x_1) - log_a(x_2) \\
+	& log_{x_2}(x_1) = \frac{\log_b(x_1)}{\log_b(x_2)}
+\end{align}
+\end{document}
