@@ -3,8 +3,8 @@
 \beamer@sectionintoc {3}{Day 2.}{13}{0}{3}
 \beamer@sectionintoc {4}{Day 2. cost summarization}{24}{0}{4}
 \beamer@sectionintoc {5}{Day 3.}{26}{0}{5}
-\beamer@sectionintoc {6}{Day 3. cost summarization}{32}{0}{6}
-\beamer@sectionintoc {7}{Day 4.}{34}{0}{7}
-\beamer@sectionintoc {8}{Day 4. cost summarization}{40}{0}{8}
-\beamer@sectionintoc {9}{Day 5.}{42}{0}{9}
-\beamer@sectionintoc {10}{Day 1-5 cost summary}{48}{0}{10}
+\beamer@sectionintoc {6}{Day 3. cost summarization}{34}{0}{6}
+\beamer@sectionintoc {7}{Day 4.}{36}{0}{7}
+\beamer@sectionintoc {8}{Day 4. cost summarization}{42}{0}{8}
+\beamer@sectionintoc {9}{Day 5.}{44}{0}{9}
+\beamer@sectionintoc {10}{Day 1-5 cost summary}{51}{0}{10}
