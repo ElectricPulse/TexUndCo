@@ -1,0 +1,159 @@
+\documentclass[11pt]{extarticle}
+\usepackage[margin=25pt]{geometry}
+\usepackage[slovak]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{fancyvrb}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{positioning, calc}
+
+\graphicspath{ {../assets/} }
+
+\makeatletter
+\def\app@exe{\immediate\write18}
+\newread\tmpFile
+\def\images#1{%
+	\def\tmpFilePath{tmp/#1_\jobname.tmp}
+	\def\imageDir{images/#1}
+	\app@exe{ls -1 \imageDir > \tmpFilePath}
+	\openin\tmpFile=\tmpFilePath
+	\def\imageName{\imageDir/\image}
+	\endlinechar=-1
+	\read\tmpFile to \image
+	\loop\unless\ifeof\tmpFile
+		\def\imageName{\detokenize\expandafter{\image}}
+		\begin{minipage}{0.2\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{\imageDir/\imageName}
+		\end{minipage}
+		\read\tmpFile to \image
+	\repeat
+	\closein\tmpFile
+	\app@exe{rm \tmpFilePath}
+	\\[2em]
+}
+\makeatother
+
+\title{%
+	{\Huge Elektronický herbár}
+	\footnote{náhodných rastlín okolo školy :)}
+}
+\author{Adam Labuš, Sexta B}
+
+\def\ruler{%
+	\vspace{0.5em}
+	\noindent\rule{\textwidth}{0.5pt}
+	\vspace{0.5em}
+}
+
+\begin{document}
+	\maketitle
+
+	\section{Úvod}
+	\subsection{Informácie k fotografiám}
+	\begin{center}
+		\begin{tabular}{ |c|c|c| }
+		\hline
+		Miesto zberu & okolie školy \\
+		Fotograf & Richard Letaši \\
+		Rastliny určil & Adam Labuš \\
+		Dátum zberu & 12.4.2024 \\
+		\hline
+		\end{tabular}
+	\end{center}
+
+	\subsection{Zaradenie}
+	\begin{tikzpicture}[node distance=1.5cm and 2cm]
+		\node (n1) {1};
+		\node (n2) [below left=of n1] {2};
+		\node (n3) [below right=of n1] {3};
+		\node (n4) [below left=of n2] {4};
+		\node (n5) [below right=of n2] {5};
+		\node (n6) [below left=of n3] {6};
+		\node (n7) [below right=of n3] {7};
+
+		\draw (n1) -- (n2);
+		\draw (n1) -- (n3);
+		\draw (n2) -- (n4);
+		\draw (n2) -- (n5);
+		\draw (n3) -- (n6);
+		\draw (n3) -- (n7);	
+	\end{tikzpciture}
+
+	\tableofcontents
+	\newpage
+
+	\section{Stromy}
+	\subsection{Smrek pichľavý - Picea pungens}
+	\images{smrek}
+	\ruler
+
+	\subsection{Lipa malolistá - Tilia cordata}
+	\images{lipa_malolista}
+	\ruler
+
+	\subsection{Javor mliečny - Acer platanoides}
+	\images{javor_horsky}
+	\ruler
+
+	\subsection{Borovica čierna - Pinus nigra}
+	\images{borovica}
+	\ruler
+
+	\subsection{Čerešňa pilkatá - Prunus serrulata}
+	\images{ceresna}
+	\ruler
+
+	\subsection{Dub letný - Quercus robur}
+	\images{dub}
+	\ruler
+
+	\subsection{Pagaštan konský - Aesculus hippocastanum}
+	\images{pagastan_konsky}
+	\ruler
+
+	\subsection{Lipa veľkolistá - Tilia platyphyllos}
+	\images{lipa_velkolista}
+	\ruler
+
+	\section{Kry}
+
+	\subsection{Tis obyčajný - Taxus baccata}
+	\images{tis}
+	\ruler
+
+	\subsection{Kaliná vráskavolistá}
+	\images{kalina}
+	\ruler
+
+	\section{Kvety}
+
+	\subsection{Lastovničník väčší - Chelidonium majus}
+	\images{lastovicnik_vacsi}
+	\ruler
+
+	\subsection{Sedmokráska obyčajná - Bellis perennis}
+	\images{sedmokraska}
+	\ruler
+
+	\subsection{Púpava lekárska - Taraxacum officinale}
+	\images{pupava}
+	\ruler
+
+	\subsection{Kapsička pastierska - Capsella bursa-pastoris}
+	\images{kapsicka_pastierska}
+	\ruler
+	
+	\section{Machorasty}
+	\subsection{}
+	\images{mach}
+	\ruler
+
+	\section{Lišajníky}
+	
+	\subsection{Diskovník múrový - Xanthoria parietina}
+	\images{lisajnik}
+	\ruler
+\end{document}
