@@ -1,0 +1,30 @@
+%The usenames,dvipsnames is for xcolor working with tikz
+\documentclass[usenames,dvipsnames]{beamer}
+%\setbeameroption{show only notes}
+\setbeamersize{text margin left=2pt, text margin right=2pt}
+\usetheme{Hannover}
+\input ./packages.tex
+\input ./macros.tex
+
+\title{Warum wir Wechselstrom und Hochspannung in Freileitungen benutzen}
+\author{}
+\institute{Johann Gottfried Herder Gymnasium Berlin}
+\date{2023}
+
+\begin{document}
+
+\begin{frameplain}
+	\pause
+	\titlepage
+	\centering
+	\includegraphics[width=0.5\paperwidth]{freileitung}
+	\note{
+		Vor pause: Es handelt sich heute um eine sehr spannende frage
+		nein aber ehrlich, wenn sie mir 10 Minuten geben werden die ein Paar Jahren von Elektrizitat Lehre viel leichter. Sie mussen verstehen, diese Note hier ist mir scheisse egal, ich will nur sie etwas schones auf dem ich gekommen bin zeigen.
+	}
+\end{frameplain}
+\input ./slides/intro.tex
+\input ./slides/circuit.tex
+\input ./slides/spannung.tex
+\input ./slides/outro.tex
+\end{document}

@@ -1,0 +1,91 @@
+\documentclass[11pt]{extarticle}
+\usepackage[margin=25pt]{geometry}
+\usepackage[slovak]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{fancyvrb}
+\usepackage{multicol}
+\usepackage{graphicx}
+\graphicspath{ {../assets/} }
+
+\makeatletter
+\def\app@exe{\immediate\write18}
+\def\images#1{%
+	\def\tmpFilePath{tmp/#1_\jobname.tmp}
+	\def\imageDir{images/#1}
+	\app@exe{ls -1 \imageDir > \tmpFilePath}
+	\newread\tmpFile
+	\openin\tmpFile=\tmpFilePath
+	\def\imageName{\imageDir/\image}
+	\endlinechar=-1
+	\read\tmpFile to \image
+	\loop\unless\ifeof\tmpFile
+		\def\imageName{\detokenize\expandafter{\image}}
+		\begin{minipage}{0.2\textwidth}
+			\centering
+			{\large \imageName}\\[0.5em]
+			\includegraphics[width=\textwidth]{\imageDir/\imageName}
+		\end{minipage}
+		\read\tmpFile to \image
+	\repeat
+	\closein\tmpFile
+	\app@exe{rm \tmpFilePath}
+}
+\makeatother
+
+\title{%
+	{\Huge Elektronický herbár}\\
+	náhodných rastlín okolo školy
+}
+\author{Adam Labuš, Sexta B}
+
+\def\ruler{%
+	\vspace{0.5em}
+	\noindent\rule{\textwidth}{0.5pt}
+	\vspace{0.5em}
+}
+
+\begin{document}
+	\maketitle
+
+	\tableofcontents
+	\newpage
+
+	\section{Stromy}
+	\subsection{Smrek}
+	\images{smrek}
+	\ruler
+
+	\subsection{Lipa malolistá}
+	\images{lipa_malolista}
+	\ruler
+
+	\subsection{Javor horkský}
+	\images{javor_horsky}
+	\ruler
+
+	\subsection{Borovica}
+	\images{borovica}
+	\ruler
+
+	\subsection{Čerešňa okrasná}
+	\images{ceresna}
+	\ruler
+
+	\subsection{Dub}
+	\images{dub}
+	\ruler
+
+	\subsection{Pagaštan konský}
+	\images{pagastan_konsky}
+	\ruler
+
+	\subsection{Smrek}
+	\images{smrek}
+
+
+
+
+	\section{Kvety}
+
+\end{document}
