@@ -5,39 +5,48 @@ def factorial(n):
 	return result
 
 
-LATEX_FORMULA_WIDTH = 0.7
-LATEX_FORMULA_HEIGHT = 1
+FORMULA_WIDTH = 1
+FORMULA_HEIGHT = 1
+RESULT_WIDTH = 1
+RESULT_HEIGHT = 1
+MARKER_OFFSET = 2.5
 
 def getCode(layers):
 	formulasCode = []
 	resultsCode = []
-	xOffset = 0
-	yOffset = 0
 
+	markerX = layers/2 * RESULT_WIDTH + MARKER_OFFSET
 	for layer in range(0, layers + 1):
-		layerOffset = xOffset
 		for i in range(0, layer + 1):
+			formulaX = -(i - layer/2) * FORMULA_WIDTH
+			formulaY = -layer * FORMULA_HEIGHT
+			resultX = -(i - layer/2) * RESULT_WIDTH
+			resultY = -layer * RESULT_HEIGHT
 			formulaCode = (
-			'\\node at (' + str(layerOffset) + ', '
-			+ str(yOffset) + ') {$' + str(layer) + ' \choose ' + str(i) + '$};'
+				'\\node at (' + str(formulaX) + ', '
+				+ str(formulaY) + ') {$' + str(layer) + ' \choose ' + str(i) + '$};'
 			)
-			result = factorial(layer)/factorial(layer - i)/factorial(i)
+			result = int(factorial(layer)/factorial(layer - i)/factorial(i))
 			resultCode = (
-			'\\node at (' + str(layerOffset) + ', '
-			+ str(yOffset) + ') {$' + str(result) + '$};'
+				'\\node at (' + str(resultX) + ', '
+				+ str(resultY) + ') {$' + str(result) + '$};'
 			)
 			formulasCode.append(formulaCode)
 			resultsCode.append(resultCode)
-			layerOffset += LATEX_FORMULA_WIDTH
-		xOffset -= LATEX_FORMULA_WIDTH/2
-		yOffset -= LATEX_FORMULA_HEIGHT
+
+		markerY = - layer * RESULT_HEIGHT
+		markerCmd = (
+			'\\node at (' + str(markerX) + ', ' + str(markerY) + ') {$n = ' + str(layer) + '$};'
+		)
+		resultsCode.append(markerCmd)
+		formulasCode.append(markerCmd)
 	
 	return ['\n'.join(formulasCode), '\n'.join(resultsCode)]
 
 code = getCode(10)
 
-with open('results.tikz', 'w') as results_file:
-	results_file.write(code[0])
-
 with open('formulas.tikz', 'w') as formulas_file:
-	formulas_file.write(code[1])
+	formulas_file.write(code[0])
+
+with open('results.tikz', 'w') as results_file:
+	results_file.write(code[1])

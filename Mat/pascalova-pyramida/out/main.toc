@@ -1,0 +1,3 @@
+\babel@toc {nil}{}\relax 
+\contentsline {section}{\numberline {1}Opis}{1}{}%
+\contentsline {section}{\numberline {2}Výpočty}{2}{}%

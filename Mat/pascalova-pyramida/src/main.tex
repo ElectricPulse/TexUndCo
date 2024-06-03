@@ -1,5 +1,5 @@
 \documentclass[12pt]{article}
-\usepackage[margin=40pt]{geometry}
+\usepackage[margin=3em]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{babel}
 \usepackage[T1]{fontenc}
@@ -8,14 +8,17 @@
 \usepackage{url}
 \graphicspath{ {./images/} }
 
-\title{\Huge Pascalov trojuholník}
-\author{}
-\date{}
-
+\pagenumbering{gobble}
 
 \begin{document}
-	\maketitle
-	\begin{tikzpicture}
-		\input{formula.tikz}
-	\end{tikzpicture}
+	\begin{center}
+		{\LARGE Pascalov trojuholník}\\[3em]
+		\large
+		\begin{tikzpicture}
+			\input{formulas.tikz}
+		\end{tikzpicture}\\[3em]
+		\begin{tikzpicture}
+			\input{results.tikz}
+		\end{tikzpicture}
+	\end{center}
 \end{document}
