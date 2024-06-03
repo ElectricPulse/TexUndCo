@@ -11,6 +11,7 @@ flags="-output-directory $outDirname -file-line-error -shell-escape"
 
 if [ "$#" = 0 ]; then
 	tmp="$(mktemp)"
+	(cd "$src"; python main.py)
 	(cd $src; texfot --quiet pdflatex $flags -interaction=nonstopmode "$texFile" >"$tmp")
 	logFile="$(mktemp)"
 	tail -n +2 "$tmp" | sed '$d' > "$logFile"

@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/bin/bash
 location="$(dirname "$(realpath "$0")")"
 viewer="$location/mupdf"
 src="$location/src"

@@ -1,8 +1,10 @@
-\documentclass[12pt]{article}
-\usepackage[margin=3em]{geometry}
+\documentclass[12pt, a4paper, landscape]{memoir}
+\usepackage[margin=0pt]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{babel}
 \usepackage[T1]{fontenc}
+\usepackage{adjustbox}
+\usepackage{amsmath}
 
 \usepackage{tikz}
 \usepackage{url}
@@ -11,14 +13,16 @@
 \pagenumbering{gobble}
 
 \begin{document}
+	\vspace*{-0.8em}
 	\begin{center}
-		{\LARGE Pascalov trojuholník}\\[3em]
+		{\LARGE Pascalov trojuholník}\\[1em]
 		\large
-		\begin{tikzpicture}
-			\input{formulas.tikz}
-		\end{tikzpicture}\\[3em]
-		\begin{tikzpicture}
-			\input{results.tikz}
-		\end{tikzpicture}
+		\begin{vplace}[0.5]
+		\begin{adjustbox}{max width=.95\paperwidth, max height=.95\paperheight}	
+			\begin{tikzpicture}
+				\input{formulas.tikz}
+			\end{tikzpicture}
+		\end{adjustbox}
+		\end{vplace}
 	\end{center}
 \end{document}

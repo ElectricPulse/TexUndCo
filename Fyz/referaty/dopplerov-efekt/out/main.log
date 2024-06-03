@@ -1,25 +1,16 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (Web2C 2023) (preloaded format=pdflatex 2024.1.6)  6 MAY 2024 21:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.5.27)  3 JUN 2024 18:02
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/usr/home/hackerman/Desktop/TexUndCo/Bio/Herbar/src/main.tex
-(/usr/home/hackerman/Desktop/TexUndCo/Bio/Herbar/src/main.tex
-LaTeX2e <2023-06-01> pre-release-2 (develop 2024-1-6 branch)
-L3 programming layer <2023-02-22>
-(/usr/local/share/texmf-dist/tex/latex/extsizes/extarticle.cls
-Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
-(/usr/local/share/texmf-dist/tex/latex-dev/base/size11.clo
-File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
-)
-(/usr/local/share/texmf-dist/tex/latex-dev/base/exscale.sty
-Package: exscale 2018/09/24 v2.1i Standard LaTeX package exscale
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
-\big@size=\dimen140
+**/home/hackerman/Desktop/TexUndCo/Fyz/referaty/dopplerov-efekt/src/main.tex
+(/home/hackerman/Desktop/TexUndCo/Fyz/referaty/dopplerov-efekt/src/main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -29,93 +20,93 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \c@subparagraph=\count190
 \c@figure=\count191
 \c@table=\count192
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen141
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
 )
-(/usr/local/share/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(/usr/local/share/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
 )
-(/usr/local/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(/usr/local/share/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \Gm@cnth=\count193
 \Gm@cntv=\count194
 \c@Gm@tempcnt=\count195
-\Gm@bindingoffset=\dimen142
-\Gm@wd@mp=\dimen143
-\Gm@odd@mp=\dimen144
-\Gm@even@mp=\dimen145
-\Gm@layoutwidth=\dimen146
-\Gm@layoutheight=\dimen147
-\Gm@layouthoffset=\dimen148
-\Gm@layoutvoffset=\dimen149
-\Gm@dimlist=\toks18
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
 )
-(/usr/local/share/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2023/02/13 3.86 The Babel package
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/01/26 3.70 The Babel package
 \babel@savecnt=\count196
-\U@D=\dimen150
-\l@unhyphenated=\language87
+\U@D=\dimen147
+\l@unhyphenated=\language3
 
-(/usr/local/share/texmf-dist/tex/generic/babel/txtbabel.def)
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count197
+Package babel Info: You haven't specified a language. I'll use 'nil'
+(babel)             as the main language. Reported on input line 4299.
 
-(/usr/local/share/texmf-dist/tex/generic/babel-slovak/slovak.ldf
-Language: slovak 2008/07/06 v3.1a Slovak support from the babel system
-Package babel Info: Making ^ an active character on input line 123.
-Package babel Info: Making " an active character on input line 126.
-Package babel Info: Making ' an active character on input line 129.
-\cs@wordlen=\count198
-Package babel Info: Making - an active character on input line 294.
+(/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
+Language: nil 2022/01/26 3.70 Nil language
+\l@nil=\language4
 ))
-(/usr/local/share/texmf-dist/tex/generic/babel/locale/sk/babel-slovak.tex
-Package babel Info: Importing font and identification data for slovak
-(babel)             from babel-sk.ini. Reported on input line 11.
-)
-(/usr/local/share/texmf-dist/tex/latex-dev/base/fontenc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(/usr/local/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2023/01/19 4.5a verbatim text (tvz,hv)
-\FV@CodeLineNo=\count199
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
+\FV@CodeLineNo=\count198
 \FV@InFile=\read3
-\FV@TabBox=\box51
-\c@FancyVerbLine=\count266
-\FV@StepNumber=\count267
+\FV@TabBox=\box50
+\c@FancyVerbLine=\count199
+\FV@StepNumber=\count266
 \FV@OutFile=\write3
 )
-(/usr/local/share/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
-\c@tracingmulticols=\count268
-\mult@box=\box52
-\multicol@leftmargin=\dimen151
-\c@unbalance=\count269
-\c@collectmore=\count270
-\doublecol@number=\count271
-\multicoltolerance=\count272
-\multicolpretolerance=\count273
-\full@width=\dimen152
-\page@free=\dimen153
-\premulticols=\dimen154
-\postmulticols=\dimen155
-\multicolsep=\skip50
-\multicolbaselineskip=\skip51
-\partial@page=\box53
-\last@line=\box54
-\maxbalancingoverflow=\dimen156
-\mult@rightbox=\box55
-\mult@grightbox=\box56
-\mult@firstbox=\box57
-\mult@gfirstbox=\box58
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count267
+\mult@box=\box51
+\multicol@leftmargin=\dimen148
+\c@unbalance=\count268
+\c@collectmore=\count269
+\doublecol@number=\count270
+\multicoltolerance=\count271
+\multicolpretolerance=\count272
+\full@width=\dimen149
+\page@free=\dimen150
+\premulticols=\dimen151
+\postmulticols=\dimen152
+\multicolsep=\skip49
+\multicolbaselineskip=\skip50
+\partial@page=\box52
+\last@line=\box53
+\maxbalancingoverflow=\dimen153
+\mult@rightbox=\box54
+\mult@grightbox=\box55
+\mult@firstbox=\box56
+\mult@gfirstbox=\box57
+\@tempa=\box58
 \@tempa=\box59
 \@tempa=\box60
 \@tempa=\box61
@@ -151,59 +142,62 @@ Package: multicol 2021/11/30 v1.9d multicolumn formatting (FMi)
 \@tempa=\box91
 \@tempa=\box92
 \@tempa=\box93
-\@tempa=\box94
-\c@minrows=\count274
-\c@columnbadness=\count275
-\c@finalcolumnbadness=\count276
-\last@try=\dimen157
-\multicolovershoot=\dimen158
-\multicolundershoot=\dimen159
-\mult@nat@firstbox=\box95
-\colbreak@box=\box96
-\mc@col@check@num=\count277
+\c@minrows=\count273
+\c@columnbadness=\count274
+\c@finalcolumnbadness=\count275
+\last@try=\dimen154
+\multicolovershoot=\dimen155
+\multicolundershoot=\dimen156
+\mult@nat@firstbox=\box94
+\colbreak@box=\box95
+\mc@col@check@num=\count276
 )
-(/usr/local/share/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/share/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(/usr/local/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(/usr/local/share/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen160
-\Gin@req@width=\dimen161
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
 )
-(/usr/local/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count278
-\l__pdf_internal_box=\box97
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/home/hackerman/Desktop/TexUndCo/Bio/Herbar/out/main.aux)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count277
+\l__pdf_internal_box=\box96
+)
+(/home/hackerman/Desktop/TexUndCo/Fyz/referaty/dopplerov-efekt/out/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -213,23 +207,23 @@ LaTeX Font Info:    ... okay on input line 48.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(25.0pt, 564.295pt, 25.0pt)
-* v-part:(T,H,B)=(25.0pt, 744.96999pt, 25.0pt)
+* h-part:(L,W,R)=(40.0pt, 534.295pt, 40.0pt)
+* v-part:(T,H,B)=(40.0pt, 714.96999pt, 40.0pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=564.295pt
-* \textheight=744.96999pt
-* \oddsidemargin=-47.26999pt
-* \evensidemargin=-47.26999pt
-* \topmargin=-84.26999pt
+* \textwidth=534.295pt
+* \textheight=714.96999pt
+* \oddsidemargin=-32.26999pt
+* \evensidemargin=-32.26999pt
+* \topmargin=-69.26999pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -239,277 +233,105 @@ LaTeX Font Info:    ... okay on input line 48.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/local/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count279
-\scratchdimen=\dimen162
-\scratchbox=\box98
-\nofMPsegments=\count280
-\nofMParguments=\count281
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count282
-\MPscratchDim=\dimen163
-\MPnumerator=\count283
-\makeMPintoPDFobject=\count284
-\everyMPtoPDFconversion=\toks20
-) (/usr/local/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\scratchcounter=\count278
+\scratchdimen=\dimen159
+\scratchbox=\box97
+\nofMPsegments=\count279
+\nofMParguments=\count280
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count281
+\MPscratchDim=\dimen160
+\MPnumerator=\count282
+\makeMPintoPDFobject=\count283
+\everyMPtoPDFconversion=\toks21
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(/usr/local/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 49.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 24.
 
-(/usr/home/hackerman/Desktop/TexUndCo/Bio/Herbar/out/main.toc)
+(/home/hackerman/Desktop/TexUndCo/Fyz/referaty/dopplerov-efekt/out/main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 31.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 31.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 31.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 31.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
+1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+<./images//simple_explanation.png, id=1, 873.2625pt x 428.60126pt>
+File: ./images//simple_explanation.png Graphic file (type png)
+<use ./images//simple_explanation.png>
+Package pdftex.def Info: ./images//simple_explanation.png  used on input line 3
+6.
+(pdftex.def)             Requested size: 267.14749pt x 131.1123pt.
  [1
 
-{/usr/local/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/sha
-re/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-runsystem(ls -1 images/smrek> tmp/smrek_main.tmp)...executed.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//simple_explanati
+on.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
 
-\tmpFile=\read4
-<images/smrek/kora.jpeg, id=12, 3035.34pt x 4047.12pt>
-File: images/smrek/kora.jpeg Graphic file (type jpg)
-<use images/smrek/kora.jpeg>
-Package pdftex.def Info: images/smrek/kora.jpeg  used on input line 56.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-<images/smrek/kora_closeup.jpeg, id=13, 3035.34pt x 4047.12pt>
-File: images/smrek/kora_closeup.jpeg Graphic file (type jpg)
-<use images/smrek/kora_closeup.jpeg>
-Package pdftex.def Info: images/smrek/kora_closeup.jpeg  used on input line 56.
-
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-<images/smrek/siska.jpeg, id=14, 3035.34pt x 4047.12pt>
-File: images/smrek/siska.jpeg Graphic file (type jpg)
-<use images/smrek/siska.jpeg>
-Package pdftex.def Info: images/smrek/siska.jpeg  used on input line 56.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-<images/smrek/vetva.jpeg, id=15, 3035.34pt x 4047.12pt>
-File: images/smrek/vetva.jpeg Graphic file (type jpg)
-<use images/smrek/vetva.jpeg>
-Package pdftex.def Info: images/smrek/vetva.jpeg  used on input line 56.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-runsystem(rm tmp/smrek_main.tmp)...executed.
-
-
-Overfull \hbox (473.22362pt too wide) in paragraph at lines 56--59
-$[]$  $[]$  $[]$  $[]$   []
  []
 
-runsystem(ls -1 images/lipa_malolista> tmp/lipa_malolista_main.tmp)...executed.
 
-\tmpFile=\read5
-<images/lipa_malolista/kora.jpeg, id=16, 3035.34pt x 4047.12pt>
-File: images/lipa_malolista/kora.jpeg Graphic file (type jpg)
-<use images/lipa_malolista/kora.jpeg>
-Package pdftex.def Info: images/lipa_malolista/kora.jpeg  used on input line 60
-.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-<images/lipa_malolista/list.jpeg, id=17, 3035.34pt x 4047.12pt>
-File: images/lipa_malolista/list.jpeg Graphic file (type jpg)
-<use images/lipa_malolista/list.jpeg>
-Package pdftex.def Info: images/lipa_malolista/list.jpeg  used on input line 60
-.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-runsystem(rm tmp/lipa_malolista_main.tmp)...executed.
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
 
-
-Overfull \hbox (235.401pt too wide) in paragraph at lines 60--63
-$[]$  $[]$  []
  []
 
-runsystem(ls -1 images/javor_horsky> tmp/javor_horsky_main.tmp)...executed.
 
-\tmpFile=\read6
-<images/javor_horsky/list.jpeg, id=18, 3035.34pt x 4047.12pt>
-File: images/javor_horsky/list.jpeg Graphic file (type jpg)
-<use images/javor_horsky/list.jpeg>
-Package pdftex.def Info: images/javor_horsky/list.jpeg  used on input line 64.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-<images/javor_horsky/plod.jpeg, id=19, 3035.34pt x 4047.12pt>
-File: images/javor_horsky/plod.jpeg Graphic file (type jpg)
-<use images/javor_horsky/plod.jpeg>
-Package pdftex.def Info: images/javor_horsky/plod.jpeg  used on input line 64.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-<images/javor_horsky/semeno.jpeg, id=20, 3035.34pt x 4047.12pt>
-File: images/javor_horsky/semeno.jpeg Graphic file (type jpg)
-<use images/javor_horsky/semeno.jpeg>
-Package pdftex.def Info: images/javor_horsky/semeno.jpeg  used on input line 64
-.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-runsystem(rm tmp/javor_horsky_main.tmp)...executed.
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
-
-Overfull \hbox (353.1015pt too wide) in paragraph at lines 64--67
-$[]$  $[]$  $[]$  []
  []
 
-runsystem(ls -1 images/borovica> tmp/borovica_main.tmp)...executed.
-
-\tmpFile=\read7
-<images/borovica/ihlicie.jpeg, id=21, 3035.34pt x 4047.12pt>
-File: images/borovica/ihlicie.jpeg Graphic file (type jpg)
-<use images/borovica/ihlicie.jpeg>
-Package pdftex.def Info: images/borovica/ihlicie.jpeg  used on input line 68.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-<images/borovica/plod.jpeg, id=22, 3035.34pt x 4047.12pt>
-File: images/borovica/plod.jpeg Graphic file (type jpg)
-<use images/borovica/plod.jpeg>
-Package pdftex.def Info: images/borovica/plod.jpeg  used on input line 68.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-runsystem(rm tmp/borovica_main.tmp)...executed.
-
-
-Overfull \hbox (235.401pt too wide) in paragraph at lines 68--71
-$[]$  $[]$  []
- []
-
-[2 <./images/smrek/kora.jpeg> <./images/smrek/kora_closeup.jpeg> <./images/smre
-k/siska.jpeg> <./images/smrek/vetva.jpeg> <./images/lipa_malolista/kora.jpeg> <
-./images/lipa_malolista/list.jpeg> <./images/javor_horsky/list.jpeg> <./images/
-javor_horsky/plod.jpeg> <./images/javor_horsky/semeno.jpeg>]
-runsystem(ls -1 images/ceresna> tmp/ceresna_main.tmp)...executed.
-
-\tmpFile=\read8
-<images/ceresna/kora.jpeg, id=27, 3035.34pt x 4047.12pt>
-File: images/ceresna/kora.jpeg Graphic file (type jpg)
-<use images/ceresna/kora.jpeg>
-Package pdftex.def Info: images/ceresna/kora.jpeg  used on input line 72.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-<images/ceresna/kvet.jpeg, id=28, 3035.34pt x 4047.12pt>
-File: images/ceresna/kvet.jpeg Graphic file (type jpg)
-<use images/ceresna/kvet.jpeg>
-Package pdftex.def Info: images/ceresna/kvet.jpeg  used on input line 72.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-<images/ceresna/kvet_christina1.jpeg, id=29, 3035.34pt x 4047.12pt>
-File: images/ceresna/kvet_christina1.jpeg Graphic file (type jpg)
-<use images/ceresna/kvet_christina1.jpeg>
-Package pdftex.def Info: images/ceresna/kvet_christina1.jpeg  used on input lin
-e 72.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-<images/ceresna/kvet_christina2.jpeg, id=30, 3035.34pt x 4047.12pt>
-File: images/ceresna/kvet_christina2.jpeg Graphic file (type jpg)
-<use images/ceresna/kvet_christina2.jpeg>
-Package pdftex.def Info: images/ceresna/kvet_christina2.jpeg  used on input lin
-e 72.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-runsystem(rm tmp/ceresna_main.tmp)...executed.
-
-
-Overfull \hbox (470.802pt too wide) in paragraph at lines 72--75
-$[]$  $[]$  $[]$  $[]$  []
- []
-
-runsystem(ls -1 images/dub> tmp/dub_main.tmp)...executed.
-
-\tmpFile=\read9
-<images/dub/kora.jpeg, id=31, 3035.34pt x 4047.12pt>
-File: images/dub/kora.jpeg Graphic file (type jpg)
-<use images/dub/kora.jpeg>
-Package pdftex.def Info: images/dub/kora.jpeg  used on input line 76.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-<images/dub/list.jpeg, id=32, 3035.34pt x 4047.12pt>
-File: images/dub/list.jpeg Graphic file (type jpg)
-<use images/dub/list.jpeg>
-Package pdftex.def Info: images/dub/list.jpeg  used on input line 76.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-runsystem(rm tmp/dub_main.tmp)...executed.
-
-
-Overfull \hbox (235.401pt too wide) in paragraph at lines 76--79
-$[]$  $[]$  []
- []
-
-runsystem(ls -1 images/pagastan_konsky> tmp/pagastan_konsky_main.tmp)...execute
-d.
-
-\tmpFile=\read10
-<images/pagastan_konsky/kora.jpeg, id=33, 3035.34pt x 4047.12pt>
-File: images/pagastan_konsky/kora.jpeg Graphic file (type jpg)
-<use images/pagastan_konsky/kora.jpeg>
-Package pdftex.def Info: images/pagastan_konsky/kora.jpeg  used on input line 8
-0.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-<images/pagastan_konsky/kvet.jpeg, id=34, 3035.34pt x 4047.12pt>
-File: images/pagastan_konsky/kvet.jpeg Graphic file (type jpg)
-<use images/pagastan_konsky/kvet.jpeg>
-Package pdftex.def Info: images/pagastan_konsky/kvet.jpeg  used on input line 8
-0.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-<images/pagastan_konsky/main.jpeg, id=35, 3035.34pt x 4047.12pt>
-File: images/pagastan_konsky/main.jpeg Graphic file (type jpg)
-<use images/pagastan_konsky/main.jpeg>
-Package pdftex.def Info: images/pagastan_konsky/main.jpeg  used on input line 8
-0.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-runsystem(rm tmp/pagastan_konsky_main.tmp)...executed.
-
-
-Overfull \hbox (353.1015pt too wide) in paragraph at lines 80--83
-$[]$  $[]$  $[]$  []
- []
-
-[3 <./images/borovica/ihlicie.jpeg> <./images/borovica/plod.jpeg> <./images/cer
-esna/kora.jpeg> <./images/ceresna/kvet.jpeg> <./images/ceresna/kvet_christina1.
-jpeg> <./images/ceresna/kvet_christina2.jpeg> <./images/dub/kora.jpeg> <./image
-s/dub/list.jpeg>]
-runsystem(ls -1 images/smrek> tmp/smrek_main.tmp)...executed.
-
-\tmpFile=\read11
-File: images/smrek/kora.jpeg Graphic file (type jpg)
-<use images/smrek/kora.jpeg>
-Package pdftex.def Info: images/smrek/kora.jpeg  used on input line 84.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-File: images/smrek/kora_closeup.jpeg Graphic file (type jpg)
-<use images/smrek/kora_closeup.jpeg>
-Package pdftex.def Info: images/smrek/kora_closeup.jpeg  used on input line 84.
-
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-File: images/smrek/siska.jpeg Graphic file (type jpg)
-<use images/smrek/siska.jpeg>
-Package pdftex.def Info: images/smrek/siska.jpeg  used on input line 84.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-File: images/smrek/vetva.jpeg Graphic file (type jpg)
-<use images/smrek/vetva.jpeg>
-Package pdftex.def Info: images/smrek/vetva.jpeg  used on input line 84.
-(pdftex.def)             Requested size: 112.85727pt x 150.43274pt.
-runsystem(rm tmp/smrek_main.tmp)...executed.
-
- [4 <./images/pagastan_konsky/kora.jpeg> <./images/pagastan_konsky/kvet.jpeg> <
-./images/pagastan_konsky/main.jpeg>]
-(/usr/home/hackerman/Desktop/TexUndCo/Bio/Herbar/out/main.aux)
- ***********
-LaTeX2e <2023-06-01> pre-release-2 (develop 2024-1-6 branch)
-L3 programming layer <2023-02-22>
- ***********
- ) 
+[2] (/home/hackerman/Desktop/TexUndCo/Fyz/referaty/dopplerov-efekt/out/main.aux
+) ) 
 Here is how much of TeX's memory you used:
- 4007 strings out of 476000
- 68477 string characters out of 5793089
- 1855432 words of memory out of 5000000
- 24445 multiletter control sequences out of 15000+600000
- 523012 words of font info for 56 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 57i,6n,62p,269b,206s stack positions out of 10000i,2500n,20000p,300000b,200000s
-</usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/l
-ocal/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/shar
-e/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/share/texmf-d
-ist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/share/texmf-dist/fonts
-/type1/public/cm-super/sfrm1200.pfb></usr/local/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfrm1728.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-s
-uper/sfrm2488.pfb>
-Output written on /usr/home/hackerman/Desktop/TexUndCo/Bio/Herbar/out/main.pdf 
-(4 pages, 32865572 bytes).
+ 3703 strings out of 480247
+ 60281 string characters out of 5896151
+ 368182 words of memory out of 5000000
+ 21623 multiletter control sequences out of 15000+600000
+ 481250 words of font info for 52 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 55i,8n,62p,487b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/hackerman/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm120
+0.600pk> </home/hackerman/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ec
+tt1000.600pk> </home/hackerman/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecrm0700.600pk> </home/hackerman/.texlive2021/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecrm0800.600pk> </home/hackerman/.texlive2021/texmf-var/fonts/pk/ljfour
+/jknappen/ec/ecrm1200.600pk> </home/hackerman/.texlive2021/texmf-var/fonts/pk/l
+jfour/jknappen/ec/ecbx1200.600pk> </home/hackerman/.texlive2021/texmf-var/fonts
+/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/hackerman/.texlive2021/texmf-var/
+fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/hackerman/.texlive2021/texmf
+-var/fonts/pk/ljfour/jknappen/ec/ecrm2488.600pk></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr8.pfb>
+Output written on /home/hackerman/Desktop/TexUndCo/Fyz/referaty/dopplerov-efekt
+/out/main.pdf (2 pages, 471796 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 233 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
