@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[default]{opensans}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage[a4paper, landscape, margin=0pt]{geometry}
+\usepackage{array}
+\usepackage[table, xcdraw, dvipsnames]{xcolor}
+\usepackage{multicol}
+\usepackage{makecell}
+\usepackage{colortbl}
+
+\title{}
+\author{}
+\date{}
+
+\setlength\extrarowheight{-3.5pt}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{1.7cm}|}
+\renewcommand{\arraystretch}{6}
+\setlength{\tabcolsep}{12pt}
+\newcommand{\classlabel}[2]{\makecell{
+	{\Large #1}\\
+	{\footnotesize #2}
+}}
+\newcommand{\daylabel}[1]{\Large #1}
+\newcommand{\class}[2]{\cellcolor{#1}{\Large #2}}
+\newcommand{\classfyz}{\class{green}{FYZ}}
+\newcommand{\classobn}{\class{pink}{OBN}}
+\newcommand{\classsjl}{\class{SeaGreen}{SJL}}
+\newcommand{\classnej}{\class{orange}{NEJ}}
+\newcommand{\classanj}{\class{CornflowerBlue}{ANJ}}
+\newcommand{\classmam}{\class{brown}{MAM}}
+\newcommand{\classsem}{\class{yellow}{SEM}}
+\newcommand{\classsef}{\class{green}{SEF}}
+\newcommand{\classche}{\class{RubineRed}{CHE}}
+\newcommand{\classdej}{\class{Dandelion}{DEJ}}
+\newcommand{\classth}{\class{LimeGreen}{TH}}
+\newcommand{\classmat}{\class{Cyan}{MAT}}
+\newcommand{\classtsv}{\class{YellowGreen}{TSV}}
+\newcommand{\classukl}{\class{YellowGreen}{UKL}}
+\newcommand{\classinf}{\class{Apricot}{INF}}
+\newcommand{\classob}{\class{white}{OB}}
+
+\newcommand{\doubleclass}[1]{\multicolumn{2}{|c|}{#1}}
+
+\begin{document}
+	\maketitle
+
+	\large
+	\begin{center}
+		\begin{tabular}{|P|P|P|P|P|P|P|P|P|P|P|}
+		\hline
+		& \classlabel{0}{7:00 - 7:45} & \classlabel{1}{7:50 - 8:35} & \classlabel{2}{8:45 - 9:30} &
+		\classlabel{3}{9:50 - 10:35} & \classlabel{4}{10:45 - 11:30} & \classlabel{5}{11:35 - 12:20} &
+		\classlabel{6}{12:25 - 13:10} & \classlabel{7}{13:15 - 14:00} & \classlabel{8}{14:05 - 14:50} &
+		\classlabel{9}{14:55 - 15:40} \\
+		\hline
+			\daylabel{Po} & & & \doubleclass{\class{Cyan}{LCF/CSL}} & \classinf & \classob & \classanj & \classnej & \doubleclass{\classsem} \\
+		\hline
+			\daylabel{Ut} & & & \classanj & \doubleclass{\classmam} & \classmat & \classob & \classobn & \doubleclass{\classsef} \\
+		\hline
+		\daylabel{St} & & & \classanj & \classche & \classtsv & \classnej & \classdej & \classob & \classsjl & \\
+		\hline
+		\daylabel{Št} & & \classsjl & \classth & \classdej & \classfyz & \classob & \classmat & \classukl & & \\
+		\hline
+		\daylabel{Pi} & & \classsjl & \classnej & \classche & \classmat & \classtsv & \classob & \classanj & \classobn & \\
+		\hline
+		\end{tabular}
+	\end{center}
+\end{document}
