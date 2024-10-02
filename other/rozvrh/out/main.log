@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.28)  7 SEP 2024 20:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.5.28)  23 SEP 2024 15:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -295,7 +295,17 @@ LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 52.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 52.
- [1
+
+Overfull \hbox (5.36972pt too wide) in paragraph at lines 64--64
+ []|\T1/opensans-TLF/m/n/14.4 LCF/CSL| 
+ []
+
+
+Overfull \hbox (5.36972pt too wide) in paragraph at lines 64--64
+ []|\T1/opensans-TLF/m/n/14.4 LCF/CSL| 
+ []
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/opensans/a_jg4h6q.enc}]
@@ -316,7 +326,7 @@ Here is how much of TeX's memory you used:
 </usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular
 .pfb>
 Output written on /home/hackerman/Desktop/TexUndCo/other/rozvrh/out/main.pdf (1
- page, 15066 bytes).
+ page, 15096 bytes).
 PDF statistics:
  14 PDF objects out of 1000 (max. 8388607)
  8 compressed objects within 1 object stream
