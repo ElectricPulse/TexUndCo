@@ -1,0 +1,144 @@
+\documentclass[11pt]{extarticle}
+\usepackage[margin=50pt]{geometry}
+\usepackage{amsmath}
+\usepackage[slovak]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{caption}
+\graphicspath{ {../assets/} }
+\usepackage{tikz}
+\usepackage{stackengine}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepackage{csvsimple}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{caption}
+\pgfplotsset{
+	table/search path={../assets/},
+}
+
+\newcommand{\Epsilon}{\mathcal{E}}
+
+\title{%
+Laboratórna práca č.1\\
+Deformácia ťahom
+}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\large
+\begin{tabular}{ll}
+	Dátum merania: 3.10.2024 \hfill &Meno: Adam Labuš \\
+	Spolupracovníci: Ivan Cabaj, Lukáš Emrich, Andrej Blažek &Trieda: Septima B \\
+\end{tabular}
+\vspace{1em}
+\section{Namerané a vypočítané hodnoty}
+\newcommand{\colname}[2]{{\LARGE $\frac{#1}{#2}$}}
+\renewcommand{\arraystretch}{1.1}
+\newcounter{csvrownum}
+
+%Gumicka
+\setcounter{csvrownum}{0}
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+	\captionof{table}{Pružný materiál - gumička}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\addstackgap[1em]{Č.M.} & \colname{m}{kg} & \colname{F}{N} & \colname{l_o}{m} & \colname{l}{m} & \colname{\Epsilon}{\%}\\
+		\hline
+		\csvreader[
+			late after line=\\
+		]{../assets/meranie-gumicka.csv}{}
+		{
+			\stepcounter{csvrownum}
+			\csvcoli & \csvcolii & \csvcoliii & 
+			\ifnum\value{csvrownum}=1 {\multirow{21}{*}{\csvcoliv}} \fi &
+			\csvcolv & \csvcolvi }
+		\hline
+	\end{tabular}
+\end{center}
+\end{minipage}
+\hfill
+%Nitka
+\setcounter{csvrownum}{0}
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+	\captionof{table}{Krehký materiál - nitka}
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		\addstackgap[1em]{Č.M.} & \colname{m}{kg} & \colname{F}{N} & \colname{l_o}{m} & \colname{l}{m} & \colname{\Epsilon}{\%}\\
+		\hline
+		\csvreader[
+			late after line=\\
+		]{../assets/meranie-nitka.csv}{}
+		{
+			\stepcounter{csvrownum}
+			\csvcoli & \csvcolii & \csvcoliii & 
+			\ifnum\value{csvrownum}=1 {\multirow{10}{*}{\csvcoliv}} \fi &
+			\csvcolv & \csvcolvi }
+		\hline
+	\end{tabular}
+\end{center}
+\end{minipage}
+
+\begin{figure}
+\begin{minipage}{0.45\textwidth}
+	\caption{Graf F od $\Epsilon$ - pružný materiál}
+	\resizebox{\linewidth}{!}{
+		\begin{tikzpicture}
+			\begin{axis}[y label style={rotate=270}, xlabel={\Large $\frac{\Epsilon}{\%}$}, ylabel={\Large $\frac{F}{N}$}, ymin=0]
+			\addplot table [x=col6, y=col3, col sep=comma] {meranie-gumicka.csv};
+		\end{axis}
+		\end{tikzpicture}
+	}
+\end{minipage}
+\hfill
+\begin{minipage}{0.45\textwidth}
+	\caption{F od $\Epsilon$ - krehký materiál}
+	\resizebox{\linewidth}{!}{
+		\begin{tikzpicture}
+		\begin{axis}[y label style={rotate=270}, xlabel={\Large $\frac{\Epsilon}{\%}$}, ylabel={\Large $\frac{F}{N}$}, ymin=0]
+			\addplot table [x=col6, y=col3, col sep=comma] {meranie-nitka.csv};
+		\end{axis}
+		\end{tikzpicture}
+	}
+\end{minipage}
+\end{figure}
+
+\begin{figure}
+\caption{F od $\Epsilon$ - pružný a krehký materiál}
+\begin{center}
+\begin{tikzpicture}
+		\begin{axis}[y label style={rotate=270}, xlabel={\Large $\frac{\Epsilon}{\%}$}, ylabel={\Large $\frac{F}{N}$}, ymin=0]
+			\addplot table [x=col6, y=col3, col sep=comma] {meranie-nitka.csv}
+			node(plot1){};
+			\node [right, color=blue] at (plot1) {\large Nitka};
+			\addplot table [x=col6, y=col3, col sep=comma] {meranie-gumicka.csv}
+			node(plot2){};
+			\node [left, color=red] at (plot2) {\large Gumička};
+		\end{axis}
+		\end{tikzpicture}
+\end{center}
+\end{figure}
+
+\section{Záver}
+Skúmali sme deformáciu ťahom pre dva rôzne materiály: gumičku a nitku. Gumička je zástupca pružných materiálov a nitka krehkých materiálov. Gumička sa zdeformovala pod maximalnou vonkajšou ťahovou silou $10.5N$. Nitka sa zdeformovala pod podobnou maximalnou vonkajšou ťahou silou $10N$. Rozdiel medzi v zdeformovaní je v hodnote maximálneho relatívneho predĺženia - pre gumičku sme namerali skoro $400\%$, zatiaľ čo pri nitke len $7\%$. Takže nitka sa skoro vôbec pri záťaži nezdeformovala, zatiaľ čo gumička skoro zštvornásobila svoju dĺžku.
+
+Na začiatku oboch grafov je lineárna krivka - tu platí priama úmernosť F ku $\Epsilon$ teda Hookov zákon. V grafe pružného materiálu vieme takisto vyznačiť oblasti tečenia, spevňovania:\\
+
+\begin{figure}[H]
+	\centering
+	\caption{Graf F od $\Epsilon$ - pružný materiál - deformačné oblasti}
+	\begin{tikzpicture}
+		\begin{axis}[y label style={rotate=270}, xlabel={\Large $\frac{\Epsilon}{\%}$}, ylabel={\Large $\frac{F}{N}$}, ymin=0]
+		\addplot table [x=col6, y=col3, col sep=comma] {meranie-gumicka.csv};
+		\addplot[draw=none, fill=cyan!50] table [x=col6, y=col3, col sep=comma] {meranie-gumicka.csv} \closedcycle;
+	\end{axis}
+	\end{tikzpicture}
+\end{figure}
+
+\end{document}
