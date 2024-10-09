@@ -130,13 +130,28 @@ Skúmali sme deformáciu ťahom pre dva rôzne materiály: gumičku a nitku. Gum
 
 Na začiatku oboch grafov je lineárna krivka - tu platí priama úmernosť F ku $\Epsilon$ teda Hookov zákon. V grafe pružného materiálu vieme takisto vyznačiť oblasti tečenia, spevňovania:\\
 
+\newcommand{\vyznac}[2]{
+\addplot[draw=none, fill=#2] table [
+	col sep=comma,
+	x expr=\thisrow{col6},
+	y expr=\thisrow{col3},
+	restrict expr to domain={\thisrow{col6}}{#1}
+] {meranie-gumicka.csv} \closedcycle;
+}
+
+
 \begin{figure}[H]
 	\centering
 	\caption{Graf F od $\Epsilon$ - pružný materiál - deformačné oblasti}
 	\begin{tikzpicture}
 		\begin{axis}[y label style={rotate=270}, xlabel={\Large $\frac{\Epsilon}{\%}$}, ylabel={\Large $\frac{F}{N}$}, ymin=0]
 		\addplot table [x=col6, y=col3, col sep=comma] {meranie-gumicka.csv};
-		\addplot[draw=none, fill=cyan!50] table [x=col6, y=col3, col sep=comma] {meranie-gumicka.csv} \closedcycle;
+		\vyznac{0:500}{red}
+		\vyznac{0:320}{brown}
+		\vyznac{0:180}{green}
+			\node at (60, 5) [color=green] {\parbox{2cm}{pružná deformácia}};
+			\node at (180, 7) [color=brown] {\textbf{spevňovanie}};
+			\node at (280, 9) [color=red] {\textbf{tečenie}};
 	\end{axis}
 	\end{tikzpicture}
 \end{figure}
