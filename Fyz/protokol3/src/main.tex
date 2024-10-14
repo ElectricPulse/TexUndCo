@@ -91,7 +91,7 @@ Deformácia ťahom
 	\resizebox{\linewidth}{!}{
 		\begin{tikzpicture}
 			\begin{axis}[y label style={rotate=270}, xlabel={\Large $\frac{\Epsilon}{\%}$}, ylabel={\Large $\frac{F}{N}$}, ymin=0]
-			\addplot table [x=col6, y=col3, col sep=comma] {meranie-gumicka.csv};
+			\addplot table [x=col6, y=col3, col sep=comma] {meranie-gumicka-graf.csv};
 		\end{axis}
 		\end{tikzpicture}
 	}
@@ -102,7 +102,7 @@ Deformácia ťahom
 	\resizebox{\linewidth}{!}{
 		\begin{tikzpicture}
 		\begin{axis}[y label style={rotate=270}, xlabel={\Large $\frac{\Epsilon}{\%}$}, ylabel={\Large $\frac{F}{N}$}, ymin=0]
-			\addplot table [x=col6, y=col3, col sep=comma] {meranie-nitka.csv};
+			\addplot table [x=col6, y=col3, col sep=comma] {meranie-nitka-graf.csv};
 		\end{axis}
 		\end{tikzpicture}
 	}
@@ -115,10 +115,10 @@ Deformácia ťahom
 \begin{center}
 	\begin{tikzpicture}[scale=1.5]
 		\begin{axis}[y label style={rotate=270}, xlabel={\Large $\frac{\Epsilon}{\%}$}, ylabel={\Large $\frac{F}{N}$}, ymin=0]
-			\addplot table [x=col6, y=col3, col sep=comma] {meranie-nitka.csv}
+			\addplot table [x=col6, y=col3, col sep=comma] {meranie-nitka-graf.csv}
 			node(plot1){};
 			\node [right, color=blue] at (plot1) {\large Nitka};
-			\addplot table [x=col6, y=col3, col sep=comma] {meranie-gumicka.csv}
+			\addplot table [x=col6, y=col3, col sep=comma] {meranie-gumicka-graf.csv}
 			node(plot2){};
 			\node [left, color=red] at (plot2) {\large Gumička};
 		\end{axis}
@@ -127,7 +127,7 @@ Deformácia ťahom
 \end{figure}
 
 \section{Záver}
-Skúmali sme deformáciu ťahom pre dva rôzne materiály: gumičku a nitku. Gumička je zástupca pružných materiálov a nitka krehkých materiálov. Gumička sa zdeformovala pod maximalnou vonkajšou ťahovou silou $10.5N$. Nitka sa zdeformovala pod podobnou maximalnou vonkajšou ťahou silou $10N$. Rozdiel medzi v zdeformovaní je v hodnote maximálneho relatívneho predĺženia - pre gumičku sme namerali skoro $400\%$, zatiaľ čo pri nitke len $7\%$. Takže nitka sa skoro vôbec pri záťaži nezdeformovala, zatiaľ čo gumička skoro zštvornásobila svoju dĺžku.
+Skúmali sme deformáciu ťahom pre dva rôzne materiály: gumičku a nitku. Gumička je zástupca pružných materiálov a nitka krehkých materiálov. Gumička sa zdeformovala pod maximalnou vonkajšou ťahovou silou $10.5N$. Nitka sa zdeformovala pod podobnou maximalnou vonkajšou ťahou silou $10N$. Rozdiel medzi v zdeformovaní je v hodnote maximálneho relatívneho predĺženia - pre gumičku sme namerali skoro $400\%$, zatiaľ čo pri nitke len $7\%$. Takže nitka sa skoro vôbec pri záťaži nezdeformovala, zatiaľ čo gumička skoro zpäťnásobila svoju dĺžku.
 
 Na začiatku oboch grafov je lineárna krivka - tu platí priama úmernosť F ku $\Epsilon$ teda Hookov zákon. V predošlom grafe deformácie pružného materiálu (Obr. 1) vieme takisto vyznačiť charakteristické oblasti:\\
 
@@ -137,7 +137,7 @@ Na začiatku oboch grafov je lineárna krivka - tu platí priama úmernosť F ku
 	x expr=\thisrow{col6},
 	y expr=\thisrow{col3},
 	restrict expr to domain={\thisrow{col6}}{#1}
-] {meranie-gumicka.csv} \closedcycle;
+] {meranie-gumicka-graf.csv} \closedcycle;
 }
 
 
@@ -146,13 +146,13 @@ Na začiatku oboch grafov je lineárna krivka - tu platí priama úmernosť F ku
 	\caption{Graf F od $\Epsilon$ - pružný materiál - deformačné oblasti}
 	\begin{tikzpicture}[scale=1.3]
 		\begin{axis}[y label style={rotate=270}, xlabel={\Large $\frac{\Epsilon}{\%}$}, ylabel={\Large $\frac{F}{N}$}, ymin=0, ymax=12]
-		\addplot table [x=col6, y=col3, col sep=comma] {meranie-gumicka.csv};
+		\addplot table [x=col6, y=col3, col sep=comma] {meranie-gumicka-graf.csv};
 		\vyznac{0:500}{red}
 		\vyznac{0:320}{blue}
 		\vyznac{0:180}{green}
 			\node at (50, 5.5) [color=green] {\parbox{2cm}{\textbf{pružná\\deformácia}}};
-			\node (1) at (180, 7) [color=blue] {spevňovanie};
-			\node (2) at (280, 9) [color=red] {tečenie};
+			\node (1) at (180, 7) [color=blue] {tečenie};
+			\node (2) at (280, 9) [color=red] {spevňovanie};
 			\node (root) at (70, 10) [] {\parbox{2cm}{\textbf{plastická\\deformácia}}};
 			\draw[->] (root.east) -- (1.north);
 			\draw[->] (root.east) -- (2.west);
