@@ -1,0 +1,39 @@
+import utils
+import os
+
+def build_asm(target, source, env, for_signature):
+    target_str = str(target[0])
+    source_str = ' '.join([str(s) for s in source])
+
+    return 'as {} -o {}'.format(target_str, source_str)
+
+def link_obj(target, source, env, for_signature):
+    target_str = str(target[0])
+    source_str = ' '.join([str(s) for s in source])
+
+    return 'ld {} -o {}'.format(target_str, source_str)
+
+location = Dir('.').srcnode().abspath
+
+asm_builder = Builder(generator = build_asm)
+link_obj = Builder(generator = link_obj)
+builders = {
+    'build_asm': asm_builder,
+    'link_obj': link_obj
+}
+env = Environment(ENV = os.environ, BUILDERS = builders)
+
+project_path = os.path.join(location, '..')
+src_dir_path = os.path.join(project_path, 'src')
+out_dir_path = os.path.join(project_path, 'out')
+
+exe_path = os.path.join(out_dir_path, 'main')
+obj_path = os.path.join(out_dir_path, 'main.o')
+src_files = utils.find_files(src_dir_path, ['asm'])
+
+obj_target = env.build_asm(obj_path, src_files)
+exe_target = env.link_obj(exe_path, obj_target)
+
+build_target = env.Alias('build', exe_target)
+env.Default(build_target)
+
