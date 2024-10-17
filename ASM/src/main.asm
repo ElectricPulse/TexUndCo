@@ -1,26 +1,14 @@
-.globl _start
-.section .text
+.text
+.global main
+.extern printf
+main:
+        push {ip, lr}
 
-_start:
-	## file descriptor
-	mov x0, #1
+        ldr r0, =string
+        mov r1, #1024
+        bl printf
 
-	adrp x1, message
-	add x1, x1, :lo12:message
+        pop {ip, pc}
 
-	# write
-	## message length
-	mov x2, 13
-	mov x8, #64
-	svc #0
-
-	# exit
-	mov x8, #93
-	mov x0, #42
-	svc #0
-
-	ret
-
-.section .rodata
-message:
-	.asciz "Hello world!\n"
+.data
+string: .asciz "The number is: %d\n"
